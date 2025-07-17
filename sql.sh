@@ -20,7 +20,7 @@ setting_password(){
 
     dnf list installed mysql
 
-    mysql -h localhost -u root -pmysql
+    mysql_secure_installation --set-root-pass mysql
 
 if [ $? -eq 0 ]
     then
