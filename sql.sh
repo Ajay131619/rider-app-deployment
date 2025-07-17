@@ -20,7 +20,7 @@ setting_password(){
 
     dnf list installed mysql
 
-    mysql -h 172.31.16.54 -u root -pmysql
+    mysql -h localhost -u root -pmysql
 
 if [ $? -eq 0 ]
     then
