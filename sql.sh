@@ -15,11 +15,13 @@ dnf install mysql-server -y
 
 dnf list installed mysql
 
-dnf install mysqld -y 
 
 setting_password(){
 
     dnf list installed mysql
+
+    mysql -h 172.31.16.54 -u root -pmysql
+
 if [ $? -eq 0 ]
     then
         echo " script is successful "
